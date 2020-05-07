@@ -211,12 +211,12 @@ int ncurses_display(deck_t *deck, int notrans, int nofade, int invert, int reloa
                 init_pair(CP_RED, 2, trans);
                 init_pair(CP_BLACK, 15, 232);
             } else {
-                init_pair(CP_WHITE, 7, trans);
-                init_pair(CP_BLUE, 4, trans);
-                init_pair(CP_RED, 1, trans);
+                init_pair(CP_WHITE, 15, trans);
+                init_pair(CP_BLUE, 12, trans);
+                init_pair(CP_RED, 9, trans);
                 init_pair(CP_BLACK, 0, 255);
             }
-            init_pair(CP_YELLOW, 3, trans);
+            init_pair(CP_YELLOW, 11, trans);
 
             // enable color fading
             if(!nofade)
